@@ -6,5 +6,6 @@ class TestFact < Test::Unit::TestCase
         assert_equal(1, 0.fact)
         assert_equal(2, 2.fact)
         assert_equal(6, 3.fact)
+        assert_raise(ArgumentError) { -4.fact }
     end
 end
